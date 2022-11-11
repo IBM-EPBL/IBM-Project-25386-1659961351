@@ -1,6 +1,7 @@
 # IBM-Project-25386-1659961351
 Detecting Parkinson’s Disease using Machine Learning
-Tean ID : PNT2022TMID03030
+
+Team ID : PNT2022TMID03030
 
 Team Leader: Sreevarshan S
 
