@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HomePage</title>
+    <style>
+      body {
+        padding:20px;
+        background-image:url('https://images.creativemarket.com/0.1.0/ps/6189315/1820/1214/m1/fpnw/wm1/dzrx62h86ilgel8q1meaokwa8tb26gwc6ea3vrpxmmf14wdpom9wpt1zznfi7dut-.jpg?1554277597&s=ac8a21003f548f33b8e8c72551dd7fe3');
+        background-size: 100% 100%;
+        background-position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-top:20px;
+        text-align: center;
+      }
+      .main {
+        margin-top: 100px;
+      }
+      p {
+        display:flex;
+        color: black;
+        text-indent: 20px;
+        margin: 10px;
+        font-size: 20px;
+      }
+      .title{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:50px;
+      }
+      .pd{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:32px;
+        color:black;
+        
+      }
+      a {
+        color: black;
+        float:right;
+        text-decoration: none;
+        font-style: normal;
+        padding:7px 15px;
+        transition:.4s ease-in;
+      }
+
+      a:hover {
+        color:white;
+        font-size: 28px;
+        border-radius: 5px;
+        box-shadow:inset  -10.5em 0 0 0 #000000, inset 10.5em 0 0 0 #ffffff;
+      }
+
+      ul {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        list-style-type: none;
+        gap: 40px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 28px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left:0;
+        right:0;
+        margin: 0;
+        padding:15px;
+        background:linear-gradient(to left,white 40%,rgb(0, 191, 255) );
+        border-bottom: rgb(255, 247, 0) 3px solid;
+      }
+      .app{
+        display:flex;
+        margin-left:30px;
+        margin-right:950px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:xx-large;
+        width:fit-content;
+        background: linear-gradient(to right,white 40%,rgb(234, 255, 0));
+        padding:5px 8px;
+        border:yellow 3px solid;
+        border-top-left-radius: 25px;
+      }
+      @media (max-width:500px){
+        .app{
+          margin-right:250px;
+        }
+      }
+      @media(min-width:501px) and (max-width:1149px){
+        .app{
+          margin-right:400px;
+        }
+      }
+      @media(min-width:1150px){
+        .app{
+          margin-right:950px;
+        }
+      }
+      .abstract{
+        background-color:rgb(0, 208, 255);
+        border:white 5px solid;
+        width:fit-content;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:20px;
+        font-weight: bold;
+        padding:5px;
+        border-radius:10px;
+        line-height: 24px;
+      }
+      li {
+        cursor: pointer;
+      }
+      li a {
+        text-decoration: none;
+        color: inherit;
+      }
+      li.active {
+        font-weight: bold;
+        color:black;
+      }
+      img{
+        width:550px;
+        height:500px;
+      }
+      .image{
+        display:grid;
+      }
+
+      @media(max-width:800px){
+        .image{
+          grid-template-columns: 1fr ;
+        }  
+      }
+      @media(min-width:801px){
+        .image{
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      
+      .main-image{
+        display:flex;
+        justify-content: center;
+      }
+      .big-image{
+        width:700px;
+        display:flex;
+      }
+
+      @media(max-width:800px){
+        .big-image{
+          width:600px;
+        }  
+      }
+      @media(min-width:801px){
+        .big-image{
+          width:800px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <b class="app">
+          PD Tester
+        </b>
+        <li class="active"><a href="/home">Home</a></li>
+        <li class="active"><a href="/upload">Test-Now</a></li>
+      </ul>
+    </nav>
+    <br /><br /><br />
+    <div>
+      <h1 class="pd" >
+        <center>
+          <b class="title">
+            Detection of Parkinson's Disease using ML 
+          </b>
+        </center>
+      </h1>
+      <center>
+        <p class="abstract"style="text-align: center">
+          Parkinson disease (PD) is a progressive neuro degenerative disorder that impacts more than 6 million people around the world.
+          Parkinson's disease is non-communicable, early-stage detection of Parkinson's can prevent further damages in humans suffering from it. 
+          However, Nonetheless, non-specialist physicians still do not have a definitive test for PD, similarly in the early stage of the disease person where the signs may be intermittent and badly characterized. 
+          It resulted in a high rate of misdiagnosis (up to 25% among non-specialists) and many years before treatment, patients can have the disorder. 
+          A more accurate, unbiased means of early detection is required, preferably one that individuals can use in their home setting.
+          However, it has been observed that PD's presence in a human is related to its hand-writing as well as hand-drawn subjects. From that perspective, several techniques have been proposed by researchers to detect Parkinson's disease from hand-drawn images of suspected people But the previous methods have their constraints.
+        </p>
+      </center>
+      <h2 class="pd">
+        <center>
+          <b>
+              Symptoms of Parkinson's Disease
+          </b>
+        </center>
+      </h2>
+
+      <div class="image">
+        <div>
+          <img src="https://stanfordmedicine25.stanford.edu/the25/parkinsondisease/_jcr_content/main/panel_builder_0/panel_0/panel_builder_0/panel_0/panel_builder/panel_0/image.img.476.high.png/1.png"
+          title="Symptoms"/>
+        </div>
+        <div>
+          <img src="https://www.verywellhealth.com/thmb/Aaqo8oM3QDHSNHCt_DlKCNeWoUk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/zhansen-5200700_Finaledit2-3e7eb00f1bdb4806adb3f67ca4404894.jpg"
+          title="Stages"/>
+        </div>
+      </div>
+
+      <h2 class="pd">
+        <center>
+          Treatment for Parkinson's Disease 
+        </center>
+      </h2>
+
+      <div class="image">
+        <div>
+          <img src="https://jnnp.bmj.com/content/jnnp/91/8/795/F4.large.jpg"
+          title="diagnosis"/>
+        </div>
+        <div>
+          <img src="https://www.verywellhealth.com/thmb/BgjmOKb2W-7z0gqLZryKBd4FFHs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/advanced-parkinsons-disease-5200544_color_text_v1-3bc74418259340ceaf5f6d407daeff73.jpg"
+          title="diagnosis"/>
+        </div>
+      </div>
+
+      <h2 class="pd" style="text-align:center;">
+        <center>
+            Effect of Parkinson's Disease on Human Brain
+        </center>
+      </h2>
+      
+      <div class="main-image">
+        <img class="big-image" id="im" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/16161/production/_107456409_parkinsons.jpg"
+        title="Stage"/>
+      </div>
+
+      <br /><br />
+    </div>
+  </body>
+</html>
